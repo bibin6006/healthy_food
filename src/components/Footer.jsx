@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { contactInfo } from "../data/siteData";
+import logoImg from "../assets/logo.jpg";
 
 const Footer = () => {
   const cleanPhone = (contactInfo.phone || '+919072743223').replace(/\s+/g, '');
@@ -13,7 +14,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-2.5 mb-3.5" aria-label="FitFuel Nutrition">
               <img
-                src="/logo.jpg"
+                src={logoImg}
                 alt="FitFuel Nutrition Logo"
                 className="h-9 w-9 object-cover rounded-control border border-paper/20 shadow-xs"
               />

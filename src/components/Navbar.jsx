@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { contactInfo } from "../data/siteData";
+import logoImg from "../assets/logo.jpg";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -55,7 +56,7 @@ function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2.5 shrink-0" aria-label="FitFuel Nutrition Home">
               <img
-                src="/logo.jpg"
+                src={logoImg}
                 alt="FitFuel Nutrition Logo"
                 className="h-9 w-9 object-cover rounded-control border border-primary/20 shadow-xs"
               />
@@ -153,7 +154,7 @@ function Navbar() {
           <div className="flex items-center justify-between px-5 h-16 border-b border-rule">
             <div className="flex items-center gap-2">
               <img
-                src="/logo.jpg"
+                src={logoImg}
                 alt="FitFuel Nutrition Logo"
                 className="h-8 w-8 object-cover rounded-control border border-primary/20"
               />

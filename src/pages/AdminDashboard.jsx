@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
+import logoImg from '../assets/logo.jpg';
 
 export default function AdminDashboard() {
   const {
@@ -213,7 +214,7 @@ export default function AdminDashboard() {
         <div className="w-full max-w-md bg-card rounded-card border border-rule p-8 shadow-card text-center">
           <div className="flex justify-center mb-4">
             <img
-              src="/logo.jpg"
+              src={logoImg}
               alt="FitFuel Nutrition Logo"
               className="h-14 w-14 object-cover rounded-control border border-primary/20 shadow-xs"
             />
