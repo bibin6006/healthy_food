@@ -1,3 +1,4 @@
+
 # Healthy Food Cloud Kitchen
 
 > **"More than meals, your wellness partner."**  
@@ -94,3 +95,4 @@ npm run preview
 ```
 
 Access the app locally at: **[http://localhost:5173/](http://localhost:5173/)**
+
