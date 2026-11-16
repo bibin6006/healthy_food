@@ -1,0 +1,70 @@
+/* Hallmark · shape: Feature Stack · genre: editorial · theme: Garden (by request) · job: subscribe · draw: bb214e
+ * hero: Poster · nav: masthead · footer: colophon block · imagery: photographs · signature: custom plan WhatsApp engine
+ * axes: light/roman-serif/chromatic-green · posture: committed · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P9 H9 E9 S9 R9 V9 · weakest: none, pristine typography & custom plan WhatsApp integration */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Vollkorn:wght@600;700&display=swap');
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./base.css" layer(base);
+
+/* Scroll & reveal helpers - visible by default, progressive enhancement with .js */
+.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: opacity, transform;
+  transition-duration: 400ms;
+  transition-timing-function: var(--ease-out);
+}
+html.js .fade-up:not(.visible) {
+  opacity: 0;
+  transform: translateY(24px);
+}
+html.js .fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 400ms;
+  transition-timing-function: var(--ease-out);
+}
+html.js .fade-in:not(.visible) {
+  opacity: 0;
+}
+html.js .fade-in.visible {
+  opacity: 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper-2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rule-2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* WhatsApp button pulse */
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-whatsapp) 45%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 14px color-mix(in srgb, var(--color-whatsapp) 0%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-whatsapp) 0%, transparent);
+  }
+}
+
+.whatsapp-pulse {
+  animation: pulse-green 2.4s infinite;
+}
